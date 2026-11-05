@@ -2,12 +2,12 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Gurucharan V',
-  description: 'Portfolio'
+  title: 'Guru Charan — Software Engineer',
+  description: 'An interactive workspace of projects, experience, and ideas by Guru Charan, a software engineer in Milwaukee.'
 };
 
 export const viewport: Viewport = {
-  themeColor: '#050816',
+  themeColor: '#fafbf8',
   width: 'device-width',
   initialScale: 1
 };

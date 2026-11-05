@@ -1,16 +1,18 @@
-# Gradient ASCII
+# Guru Charan — Portfolio
 
-Single-screen, non-scrollable Next.js (App Router) page rendering the React Bits `GradientASCII` WebGL component full-viewport, with `glyphOpacity={0}`.
+A white portfolio workspace built with Next.js and React, with panels for projects, project details, about, experience, and education.
 
 ## Run
 
-```bash
+```sh
 npm install
-npm run dev     # http://localhost:3000
-npm run build && npm start
+npm run dev
 ```
 
-## Tweak
+Open http://localhost:3000. Use `npm run build` and `npm start` for production.
 
-All props live in `app/page.tsx`. Set `glyphOpacity` back to `0.85` to bring the ASCII characters back.
-Try `shape="pinch" | "rise" | "eclipse"` and `clickEffect="burst"`.
+Desktop panels can be dragged by their dotted handles, minimized, or expanded. Focus a handle and use arrow keys to reposition it. Escape closes expanded panels. Smaller screens show the panels in a scrollable workspace.
+
+Select a project to update its details. Contact and resume links remain at the bottom. Entrance animations respect reduced-motion preferences.
+
+Content lives in `components/PortfolioDesktop.tsx`, with styles in `app/globals.css`. The resume is served from `public/Gurucharan_Vemuru_Resume.pdf`.
