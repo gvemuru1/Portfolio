@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: #050816;
+}
+
+body {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+}
