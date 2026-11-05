@@ -42,6 +42,31 @@ export default function Page() {
           </svg>
         </button>
       </div>
+      <div className="absolute inset-x-6 top-24 bottom-6 z-10 grid content-start gap-8 overflow-y-auto text-left font-sans text-black sm:inset-x-7 sm:top-28 sm:grid-cols-2 sm:gap-12">
+        <section
+          aria-label="About me"
+        >
+          <h1 className="font-sans text-xs font-semibold tracking-tight">
+            TL;DR
+          </h1>
+          <p className="mt-3 font-sans text-base font-semibold leading-relaxed tracking-tight sm:text-lg">
+            Hi, I’m Guru Charan, a software engineer and tech enthusiast. I build things,
+            break a few along the way, and usually know how to put them back together.
+            I’m especially curious about backend systems and what happens when thousands
+            of people show up at once.
+          </p>
+        </section>
+        <section aria-labelledby="education-heading" className="sm:justify-self-end sm:min-w-[260px]">
+          <div className="mt-3">
+            <h3 className="text-base font-semibold tracking-tight sm:text-lg">M.S., Information Technology</h3>
+            <p className="mt-1 text-sm leading-relaxed">University of Wisconsin-Milwaukee</p>
+          </div>
+          <div className="mt-5">
+            <h3 className="text-base font-semibold tracking-tight sm:text-lg">B.E., Computer Science</h3>
+            <p className="mt-1 text-sm leading-relaxed">NBKRIST (JNTUA)</p>
+          </div>
+        </section>
+      </div>
     </main>
   );
 }
