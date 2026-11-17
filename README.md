@@ -1,18 +1,23 @@
-# Guru Charan — Portfolio
+# Gurucharan Vemuru Portfolio
 
-A white portfolio workspace built with Next.js and React, with panels for projects, project details, about, experience, and education.
+Personal portfolio for Gurucharan Vemuru, Full-Stack Software Engineer.
 
-## Run
+Built with Next.js, React, TypeScript, and Tailwind CSS. Resume content lives in `src/data/resume.tsx`.
+
+## Local development
 
 ```sh
-npm install
+pnpm install
 npm run dev
 ```
 
-Open http://localhost:3000. Use `npm run build` and `npm start` for production.
+Open http://localhost:3000. Set `NEXT_PUBLIC_SITE_URL` to the deployed site URL when hosting.
 
-Desktop panels can be dragged by their dotted handles, minimized, or expanded. Focus a handle and use arrow keys to reposition it. Escape closes expanded panels. Smaller screens show the panels in a scrollable workspace.
+## Checks
 
-Select a project to update its details. Contact and resume links remain at the bottom. Entrance animations respect reduced-motion preferences.
+```sh
+npx tsc --noEmit
+npm run build
+```
 
-Content lives in `components/PortfolioDesktop.tsx`, with styles in `app/globals.css`. The resume is served from `public/Gurucharan_Vemuru_Resume.pdf`.
+The original template's license is retained in `LICENSE.md`.
