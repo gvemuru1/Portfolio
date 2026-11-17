@@ -3,7 +3,10 @@ import { withContentCollections } from "@content-collections/next";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  ...(process.env.GITHUB_PAGES === "true" ? { output: "export", trailingSlash: true, images: { unoptimized: true } } : {}),
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "",
   async headers() {
+    if (process.env.GITHUB_PAGES === "true") return [];
     return [
       {
         source: "/:path*",

@@ -1,3 +1,4 @@
+import { assetPath } from "@/lib/asset-path";
 import { Icons } from "@/components/icons";
 import { HomeIcon } from "lucide-react";
 
@@ -104,8 +105,11 @@ const resume = {
 
 export const DATA = {
  ...resume,
+ avatarUrl: assetPath(resume.avatarUrl),
+ work: resume.work.map(work => ({ ...work, logoUrl: assetPath(work.logoUrl) })),
+ education: resume.education.map(education => ({ ...education, logoUrl: assetPath(education.logoUrl) })),
  skills: ["Python", "JavaScript", "TypeScript", "Go", "React", "Next.js", "AWS", "Docker", "Kubernetes", "PostgreSQL", "Node.js"],
- navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+ navbar: [{ href: assetPath("/"), icon: HomeIcon, label: "Home" }],
  contact: {
  email: "gurucharanvemuru@gmail.com",
  tel: "+14146291607",

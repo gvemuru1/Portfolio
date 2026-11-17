@@ -1,3 +1,4 @@
+import { assetPath } from "@/lib/asset-path";
 import type { ComponentType, SVGProps } from "react";
 import { Accessibility, Braces, Cloud, Database, GitBranch, KeyRound, Network, Radio, ShieldCheck, TestTubeDiagonal, Workflow } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
@@ -23,7 +24,7 @@ const icons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
 
 export function SkillIcon({ name, ...props }: SVGProps<SVGSVGElement> & { name: string }) {
   if (name === "AWS") {
-    return <svg viewBox="0 0 128 128" aria-hidden="true" {...props}><image href="/aws.svg" width="128" height="128" /></svg>;
+    return <svg viewBox="0 0 128 128" aria-hidden="true" {...props}><image href={assetPath("/aws.svg")} width="128" height="128" /></svg>;
   }
   if (name === "JavaScript") {
     return <svg viewBox="0 0 24 24" aria-hidden="true" {...props}><rect width="24" height="24" fill="#f7df1e" /><text x="22" y="20" textAnchor="end" fontSize="12" fontWeight="700" fontFamily="Arial, sans-serif" fill="#111">JS</text></svg>;

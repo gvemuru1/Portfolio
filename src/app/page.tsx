@@ -1,3 +1,4 @@
+import { assetPath } from "@/lib/asset-path";
 /* eslint-disable @next/next/no-img-element */
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -31,7 +32,7 @@ export default function Page() {
                 text={DATA.description}
               />
               <a
-                href="/Gurucharan_Vemuru_Resume.pdf"
+                href={assetPath("/Gurucharan_Vemuru_Resume.pdf")}
                 download="Gurucharan_Vemuru_Resume.pdf"
                 className="mt-3 inline-flex w-fit items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
